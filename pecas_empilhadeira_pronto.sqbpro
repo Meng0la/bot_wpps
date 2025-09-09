@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="C:/Users/mikap/Desktop/Bot/DB/pecas_empilhadeira_pronto.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="0"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="1540"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><table title="pecas" custom_title="0" dock_id="2" table="4,5:mainpecas"/><dock_state state="000000ff00000000fd0000000100000002000002380000020cfc0100000002fb000000160064006f0063006b00420072006f00770073006500310100000000000002380000000000000000fb000000160064006f0063006b00420072006f00770073006500320100000000ffffffff0000012400ffffff000002380000000000000004000000040000000800000008fc00000000"/><default_encoding codec=""/><browse_table_settings/></tab_browse><tab_sql><sql name="SQL 1*">
+-- Criação da tabela
+CREATE TABLE pecas (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    marca_empilhadeira VARCHAR(50) NOT NULL,
+    tipo_energia VARCHAR(20) NOT NULL,
+    modelo VARCHAR(50) NOT NULL,
+    motor VARCHAR(50) NOT NULL,
+    nome_peca VARCHAR(100) NOT NULL,
+    codigo_peca VARCHAR(50) NOT NULL,
+    observacoes VARCHAR(200)
+);
+
+-- Inserção de dados de exemplo
+INSERT INTO pecas (marca_empilhadeira, tipo_energia, modelo, motor, nome_peca, codigo_peca, observacoes)
+VALUES 
+('Yale', 'GLP', 'GDP50VX', 'Kubota 3.8L SI LPG', 'Motor de Partida', '582018430', 'Linha 80VX a 120VX K813'),
+('Yale', 'GLP', 'GDP55VX', 'Kubota 3.8L SI LPG', 'Filtro de Ar', '582019812', 'Filtro padrão do motor 3.8L'),
+('Yale', 'GLP', 'GDP45VX', 'Kubota 3.8L SI LPG', 'Alternador', '582018870', 'Alternador original Kubota'),
+('Yale', 'GLP', 'GDP50VX', 'Kubota 3.8L SI LPG', 'Bomba Hidráulica', '582020501', 'Bomba da linha VX'),
+('Yale', 'GLP', 'GDP50VX', 'Kubota 3.8L SI LPG', 'Sensor de Temperatura', '582021115', 'Sensor padrão Kubota');
+</sql><current_tab id="0"/></tab_sql></sqlb_project>
