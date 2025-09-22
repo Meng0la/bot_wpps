@@ -3,8 +3,6 @@ bot_wpps
 Atendimento ao cliente por WhatsApp com base de dados de peças (consulta e cadastro).
 O projeto integra um webhook de WhatsApp (Meta/Business), consulta uma base local (SQLite) de peças e expõe utilitários para cadastro/importação.
 
-Estrutura observada do repositório: CadastrarPeças.py, pecas.js, pecas_empilhadeira_pronto.db, python.py, whatsapp_webhook.py. 
-GitHub
 
 ✨ Funcionalidades
 
